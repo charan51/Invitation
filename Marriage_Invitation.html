@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Wedding Invitation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+
+</style>
+<body>
+
+
+<div class="mobile-wrapper clear">
+  <div class="intro">
+    <p class="animated fadeInUp">In the name of allah, the most benefecient and merciful</p>
+  </div>
+  <div class="container-text">
+    It gives me immense pleasure to cordially inviting you and your family on the auspicious occasion of marriage.
+  </div>
+
+  <div class="container-names">
+    <strong> Maqsood Ali </strong>
+    <span> weds</span>
+    <strong class="right">Rumman </strong>
+  </div>
+  <div class="date">
+    <span class="fa fa-calendar"></span> On 7th September 2017
+  </div>
+  <div class="container-venue">
+    <h2><span class="fa fa-map-marker"></span> venue</h2>
+    <div class="nikah">
+    <h3>nikah (marriage)</h3>
+    <p>
+      Masjid-e-Khadriya,
+      Eidgah-e-Khuddus saheb,
+      Miller's road, Bangalore - 560 046
+      <br/><span class="fa fa-clock-o"></span> 10:30 am.
+    </p>
+    </div>
+    <div class="valima">
+    <h3>valima (reception)</h3>
+    <p>
+      Al-Azeez Banquet Hall,
+      St. John's church road, near Coles park,
+      Bangalore - 560 005
+      <br/><span class="fa fa-clock-o"></span> 1:00 pm onwards.
+    </p>
+    </div>
+  </div>
+
+
+
+
+<div class="container-map">
+  <span class="close-map">&times;</span>
+  <h3>valima (reception)</h3>
+    <p>
+      Al-Azeez Banquet Hall,
+      St. John's church road, near Coles park,
+      Bangalore - 560 005
+      <br/><span class="fa fa-clock-o"></span> 1:00 pm onwards.
+    </p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2119.7620254967096!2d77.6071285140234!3d12.993519972817307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae165f7ff47df5%3A0xf13ec608bc49e1f0!2sAL+-+Azeez+Banquet+Hall!5e0!3m2!1sen!2sin!4v1504416612293" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+</div>
+<div class="container-btn-venue clear">
+  <button class="btn-venue-open"><span class="fa fa-map-marker"></span> Map</button>
+</div>
+<script type="text/javascript">
+     
+      function animateInvitation(){
+
+        setTimeout(function() {
+        $('.intro').css({"height":"60px","padding":"15px 0","font-size":"10px"})
+        }, 3000);
+
+        setTimeout(function() {
+          $('.container-text').css({"display":"block"}).addClass('animated fadeInUp');
+        }, 5000);
+        setTimeout(function() {
+          $('.container-names').addClass('animated fadeInUp').css({"display":"block"});
+        }, 7000);
+       
+         setTimeout(function() {
+          $('.date').addClass('animated fadeInUp').css({"display":"block"});
+        }, 8000);
+        setTimeout(function() {
+          $('.container-venue h2').addClass('animated fadeInUp').css({"display":"block"});
+        },9000);
+        setTimeout(function() {
+          $('.container-venue .nikah').addClass('animated fadeInUp').css({"display":"block"});
+        },10000);
+        setTimeout(function() {
+          $('.container-venue .valima').addClass('animated fadeInUp').css({"display":"block"});
+        },11000);
+        setTimeout(function() {
+          $('.mobile-wrapper').css({"overflow":"scroll"});
+        },11000);
+      }
+      animateInvitation();
+      function showMap(){
+        $('.container-map').css({"display":"block"}).removeClass('animated slideOutDown').addClass('animated slideInUp');
+      }
+      $('.btn-venue-open').click(function(){
+          showMap();
+      });
+      $('.valima').click(function(){
+          showMap();
+      });
+      $('.close-map').click(function(){
+       $('.container-map').addClass('animated slideOutDown');
+      });
+      
+</script>
+
+</body>
+</html>
